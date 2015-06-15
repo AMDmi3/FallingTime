@@ -32,7 +32,7 @@
 #ifdef WIN32
 	// For alloca().
 	#include <malloc.h>
-#else
+#elif defined(__linux__)
 	#include <alloca.h>
 #endif
 
